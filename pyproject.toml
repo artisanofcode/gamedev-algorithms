@@ -1,0 +1,20 @@
+[project]
+name = "gamedev-notebooks"
+version = "0.0.1"
+description = "Jupyter Notebooks for Game Development Algorithms"
+authors = [{ name = "Daniel Knell", email = "contact@danielknell.co.uk" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["matplotlib (>=3.10.1,<4.0.0)", "numpy (>=2.2.3,<3.0.0)", "opensimplex (>=0.4.5.1,<0.5.0.0)"]
+classifiers = ["Private :: Do Not Upload"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
